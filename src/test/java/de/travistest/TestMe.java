@@ -19,7 +19,7 @@ public class TestMe {
       try (FileWriter writer = new FileWriter(file)){
          writer.write(String.valueOf(number));
       }
-      Thread.sleep(5000);
+      Thread.sleep(25000);
       try (Scanner scanner = new Scanner(file)){
          final int number2 = scanner.nextInt();
          System.out.println("Read " + number2);
